@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero{
+    background-image: url(../src/assets/bg.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
