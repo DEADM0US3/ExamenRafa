@@ -1,21 +1,15 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Index from './components/Index';
 
 function App() {
-  // axios.get('')
-  // .then(response => {
-  //   // Manejo de la respuesta exitosa
-  //   console.log(response.data);
-  // })
-  // .catch(error => {
-  //   // Manejo de errores
-  //   console.error(error);
-  // });
-
   return (
-    <div>
-      <h1 className=" text-9xl">Hello World</h1>
-
-
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index/>} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
